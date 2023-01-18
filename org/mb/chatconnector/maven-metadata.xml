@@ -4,8 +4,8 @@
   <artifactId>chatconnector</artifactId>
   <versioning>
     <versions>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>0.0.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20230118222155</lastUpdated>
+    <lastUpdated>20230118233054</lastUpdated>
   </versioning>
 </metadata>
