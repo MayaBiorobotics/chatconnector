@@ -1,6 +1,7 @@
-package ru.mb.chatconnector.model;
+package org.mb.chatconnector.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import org.mb.chatconnector.util.CustomEnumDeserializer;
 
 @JsonDeserialize(using = CustomEnumDeserializer.class)
 public enum EventType {

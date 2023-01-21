@@ -1,4 +1,4 @@
-package ru.mb.chatconnector.config;
+package org.mb.chatconnector.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;

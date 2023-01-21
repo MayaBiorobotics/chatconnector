@@ -1,4 +1,4 @@
-package ru.mb.chatconnector.manager;
+package org.mb.chatconnector.service;
 
 
 public interface ChatConnector {

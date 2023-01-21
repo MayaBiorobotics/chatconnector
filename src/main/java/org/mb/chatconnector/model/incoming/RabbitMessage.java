@@ -1,8 +1,8 @@
-package ru.mb.chatconnector.model.incoming;
+package org.mb.chatconnector.model.incoming;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
-import ru.mb.chatconnector.model.EventType;
+import org.mb.chatconnector.model.EventType;
 
 @Data
 @Accessors(chain = true)

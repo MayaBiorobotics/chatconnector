@@ -8,13 +8,13 @@
         <version>2.7.8-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>ru.mb</groupId>
+    <groupId>org.mb</groupId>
     <artifactId>chatconnector</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>chatconnector</name>
     <description>chatconnector</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>8</java.version>
         <github.global.server>github</github.global.server>
         <github.maven-plugin>0.9</github.maven-plugin>
     </properties>
@@ -72,6 +72,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>repackage</id>
+                        <configuration>
+                            <classifier>exec</classifier>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
@@ -92,14 +100,14 @@
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
-                <version>${github.maven-plugin}</version>
+                <version>0.12</version>
                 <configuration>
                     <message>Maven artifacts for ${project.version}</message>
                     <noJekyll>true</noJekyll>
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <branch>refs/heads/mvn-repo</branch>
                     <includes><include>**/*</include></includes>
-                    <repositoryName>chat-connector</repositoryName>
+                    <repositoryName>chatconnector</repositoryName>
                     <repositoryOwner>MayaBiorobotics</repositoryOwner>
                 </configuration>
                 <executions>

@@ -1,4 +1,4 @@
-package ru.mb.chatconnector.model.incoming;
+package org.mb.chatconnector.model.incoming;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -8,4 +8,5 @@ import lombok.experimental.Accessors;
 public class ConfirmDialogCreateDto {
     private Long chatUserId;
     private Long chatDialogId;
+    private String meta;
 }

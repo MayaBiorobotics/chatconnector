@@ -1,4 +1,4 @@
-package ru.mb.chatconnector.model.outgoing;
+package org.mb.chatconnector.model.outgoing.nested;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
