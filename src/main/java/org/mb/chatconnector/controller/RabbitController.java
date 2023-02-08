@@ -24,7 +24,7 @@ public class RabbitController {
 
     private static final String AUTHORIZATION_HEADER = "Authorization";
     private final ChatConnectorProperties chatConnectorProperties;
-    private final ObjectMapper objectMapper;
+    private ObjectMapper objectMapper = new ObjectMapper();
     private final RabbitManager rabbitManager;
 
     @RabbitListener(queues = "#{chatConnectorProperties.getQueue()}")

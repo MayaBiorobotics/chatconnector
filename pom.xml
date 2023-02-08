@@ -10,7 +10,7 @@
     </parent>
     <groupId>org.mb</groupId>
     <artifactId>chatconnector</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.0.8-SNAPSHOT</version>
     <name>chatconnector</name>
     <description>chatconnector</description>
     <properties>
@@ -41,7 +41,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
         </dependency>
 
         <dependency>
