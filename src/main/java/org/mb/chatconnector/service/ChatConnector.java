@@ -5,6 +5,6 @@ public interface ChatConnector {
     default void onConfirmUserCreate(String username, Long chatUserId) {
     }
 
-    default void onConfirmDialogCreate(Long chatDialogId, Long chatUserId) {
+    default void onConfirmDialogCreate(Long chatDialogId, Long chatUserId, String meta) {
     }
 }

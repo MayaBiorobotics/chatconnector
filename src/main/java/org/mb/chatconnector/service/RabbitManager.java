@@ -41,7 +41,7 @@ public class RabbitManager {
                 break;
             case CONFIRM_CREATE_DIALOG:
                 ConfirmDialogCreateDto dialogCreateDto = mapper.convertValue(payload, ConfirmDialogCreateDto.class);
-                chatConnector.onConfirmDialogCreate(dialogCreateDto.getChatDialogId(), dialogCreateDto.getChatUserId());
+                chatConnector.onConfirmDialogCreate(dialogCreateDto.getChatDialogId(), dialogCreateDto.getChatUserId(), dialogCreateDto.getMeta());
                 break;
             default:
                 throw new IllegalArgumentException("Неподдерживаемый тип");
